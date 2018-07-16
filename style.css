@@ -1,0 +1,34 @@
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    background: grey;
+    padding: 10px;
+}
+
+li {
+    flex: 1 1 10%;
+    border: solid 2px black;
+    margin: -2px -2px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 415px) {
+    li {
+        background: yellow;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    li {
+        background: mediumaquamarine;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 415px) {
+    li {
+        background: salmon;
+    }
+}
